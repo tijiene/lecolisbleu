@@ -74,8 +74,12 @@
             line-height: 1.4;
         }
 
+        .font-bold {
+            font-weight: 700;
+        }
+
         .text-section h1 span {
-            color: red;
+            color: rgb(242 69 63/var(--tw-text-opacity));
         }
 
         .text-section p {
@@ -160,12 +164,8 @@
         <h1>Le Colis Bleu</h1>
     </header>
 
-    <nav>
-        <a href="#">Accueil</a>
-        <a href="#">Services</a>
-        <a href="#">Tarifs</a>
-        <a href="#">Contact</a>
-    </nav>
+    <div id="nav"></div>
+    <script src="nav.js"></script>
     
     <div class="container">
         <div class="text-section">
@@ -173,8 +173,11 @@
                 Envoyez votre <br>
                 colis <span>simplement</span>
             </h1>
-            <p>grâce au fret maritime</p>
-            <p>Trouvez les meilleurs tarifs pour vos envois par bateau.</p>
+            
+
+            <p class="font-bold">grâce au fret maritime</p>
+            
+            <p class="font-bold">les meilleurs tarifs pour vos envois par bateau.</p>
             <div class="button">
                 <a href="#">Comparer les prix</a>
             </div>
